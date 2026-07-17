@@ -72,14 +72,36 @@ gap: 10px;
 <div class="box social-box"><span style="color:yellow; text-shadow:0 0 10px rgba(255,255,0,0.8);">ANGEL 😇</span><br>Neyokke Umbum 🥰</div>
 </div>
 <audio id="bgm" loop>
-  <source src="https://files.catbox.moe/bvk6io.mp3" type="audio/mpeg">
+<source src="https://files.catbox.moe/bvk6io.mp3" type="audio/mpeg">
 </audio>
 
+<button id="musicBtn" style="position:fixed; bottom:20px; right:20px; font-size:28px; background:rgba(0,0,0,0.6); border:2px solid red; border-radius:50%; width:55px; height:55px; cursor:pointer; z-index:999;">🎵</button>
+
 <script>
-document.body.addEventListener('click', function() {
-  var audio = document.getElementById('bgm');
+var audio = document.getElementById('bgm');
+var btn = document.getElementById('musicBtn');
+var isPlaying = false;
+
+// First click - play
+document.body.addEventListener('click', function start() {
   audio.play();
+  isPlaying = true;
+  btn.textContent = '🎵';
+  document.body.removeEventListener('click', start);
 }, {once: true});
+
+// Button click - on/off
+btn.onclick = function() {
+  if(isPlaying) {
+    audio.pause();
+    btn.textContent = '🔇';
+    isPlaying = false;
+  } else {
+    audio.play();
+    btn.textContent = '🎵';
+    isPlaying = true;
+  }
+};
 </script>
 </body>
 </html>  
