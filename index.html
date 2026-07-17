@@ -8,13 +8,36 @@
 body{background:url('https://i.postimg.cc/c1M4Gzwj/IMG-20260628-WA1585.jpg') no-repeat center center fixed; background-size:cover; color:white; font-family: 'Courier New', monospace; text-align:center; padding:20px;}
 .photo{width:150px;height:150px;border-radius:50%;border:3px solid #00ff00;box-shadow:0 0 20px #00ff00;}
 h1{color:#00ff00;text-shadow:0 0 10px #00ff00;font-size:28px;}
-.btn{display:inline-block;padding:8px 15px;margin:5px;border-radius:5px;color:white;font-weight:bold;text-decoration:none;}
-.btn.instagram{background:#E4405F;}
-.btn{display:inline-block;padding:8px 15px;margin:5px;border-radius:5px;color:white;font-weight:bold;text-decoration:none;}
-.btn.whatsapp{background:#25D366;}:
-.btn.instagram{background:#E4405F;} 
-.box{border:2px solid #ff0040; border-radius:15px; padding:20px; margin:20px; background:#1a1a1a; box-shadow:0 0 20px #ff0040;} 
-.box{width:90%; max-width:400px; border:2px solid rgba(255,0,64,0.5); border-radius:20px; padding:30px; margin:25px auto; background:rgba(255,255,255,0.15); box-shadow:0 0 30px rgba(255,0,64,0.4); display:flex; flex-direction:column; justify-content:center; align-items:center; gap:15px;}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 10px;
+}
+
+.box {
+  width: 90%;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  text-align: center;
+  border: 2px solid #ff69b4;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.whatsapp { background: #25D366; }
+.instagram { background: #E4405F; }
+
+.box:hover {
+  transform: scale(1.03);
+}
 .box h1, .box h2, .box p{color:white; text-shadow:0 2px 10px rgba(0,0,0,0.7);}
 /* DEVIL BOX TEXT VIOLET AKKAN */
 .box:nth-of-type(2) p{color:violet; text-shadow:0 0 8px rgba(138,43,226,0.8);}
@@ -24,14 +47,11 @@ h1{color:#00ff00;text-shadow:0 0 10px #00ff00;font-size:28px;}
 <body>
 <img src="https://i.postimg.cc/vcQNncb0/photo.jpg" class="photo">
 <h1>Sam._.sulekh</h1>
-<p style="color:#00ffff;">THE GOD 🧿</p>
-<div class="box">
-<h3 style="color:#00FF00; margin-bottom:10px;">MRX 😈</h3>
-<a href="https://wa.me/918891256692" target="_blank" class="btn whatsapp">WhatsApp Me</a>
-<a href="https://instagram.com/sam._.sulekh" target="_blank" class="btn instagram">Instagram</a>
+<div class="container">
+  <a href="https://wa.me/918891256692" target="_blank" class="box whatsapp">WhatsApp Me</a>
+  <a href="https://instagram.com/sam__sulekh_" target="_blank" class="box instagram">Instagram</a>
+  <div class="box">DEVIL 💖<br>[Angry] 😡 [Ego] 🤬 <br>[No emotion] 😐 </div>
+  <div class="box">ANGEL 😇<br>Neyokke Umbum 🥰</div>
 </div>
-<div class="box"><h3 style="color:#ff00ff;">DEVIL 👹</h3><p>[Angry™] 😠 [Ego™] ⚡<br>[No emotion™] 🥶</p></div>
-<div class="box"><h3 style="color:yellow;">ANGEL 🕊️</h3><p>Neyokke Umbum 😮‍💨</p></div>
-<p style="margin-top:30px;color:#ff0040;font-weight:bold;">© 2026 Sam._.sulekh | DEAL WITH WRONG PERSON ☠️</p>
 </body>
 </html>  
